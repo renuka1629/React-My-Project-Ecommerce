@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { products } from "../date/product.js";
 import ProductCard from "../components/ProductCard";
-import { FaStoreAlt } from "react-icons/fa"; // 🎯 Fancy store icon
-// Remove: import "./Home.css"; — if you're switching to inline or scoped styles
+import { FaStoreAlt } from "react-icons/fa";
 
 export default function Home() {
     const [search, setSearch] = useState("");
@@ -20,18 +19,20 @@ export default function Home() {
         container: {
             padding: "30px",
             fontFamily: "'Segoe UI', sans-serif",
-            backgroundColor: "#f9f9ff",
+            backgroundColor: "#fff8fc",
             minHeight: "100vh",
-            color: "#222"
+            color: "#333"
         },
         heading: {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            fontSize: "2rem",
-            color: "rebeccapurple",
-            gap: "10px",
-            marginBottom: "25px"
+            fontSize: "2.5rem",
+            color: "#c71585", // medium violet red
+            gap: "12px",
+            marginBottom: "30px",
+            fontFamily: "'Pacifico', cursive",
+            textShadow: "1px 1px 2px rgba(0,0,0,0.1)"
         },
         filters: {
             display: "flex",
@@ -44,15 +45,17 @@ export default function Home() {
             padding: "10px",
             fontSize: "1rem",
             borderRadius: "6px",
-            border: "1px solid #ccc",
-            minWidth: "220px"
+            border: "1px solid #bbb",
+            minWidth: "220px",
+            outlineColor: "#c71585"
         },
         select: {
             padding: "10px",
             fontSize: "1rem",
             borderRadius: "6px",
-            border: "1px solid #ccc",
-            minWidth: "180px"
+            border: "1px solid #bbb",
+            minWidth: "180px",
+            outlineColor: "#c71585"
         },
         grid: {
             display: "grid",
@@ -64,7 +67,7 @@ export default function Home() {
     return (
         <div style={styles.container}>
             <h1 style={styles.heading}>
-                <FaStoreAlt size={30} color="rebeccapurple" />
+                <FaStoreAlt size={32} color="#c71585" />
                 Explore Our Products
             </h1>
             <div style={styles.filters}>

@@ -1,22 +1,22 @@
-import product1 from "../assets/images/images3.png";
-import product2 from "../assets/images/im1.png";
-import product3 from "../assets/images/im1.png";
-import product4 from "../assets/images/image4.png";
-import product5 from "../assets/images/img5.png";
+import product1 from "../assets/images/Bottle.png";
+import product2 from "../assets/images/Slipper.png";
+import product3 from "../assets/images/headphones.png";
+import product4 from "../assets/images/yellow joket.png";
+import product5 from "../assets/images/Hat.png";
 
 export const products = [
   {
     id: 1,
-    name: "Velocity Sneakers",
-    category: "Footwear",
+    name: "Bottle",
+    category: "New Bottle",
     price: 2499,
     description: "Sleek running sneakers designed for all-day comfort.",
     image: product1,
   },
   {
     id: 2,
-    name: "Urban Tee",
-    category: "Clothing",
+    name: "Stylish Slipper",
+    category: "Slipper",
     price: 799,
     description: "Minimalist cotton t-shirt with a modern streetwear vibe.",
     image: product2,
@@ -31,7 +31,7 @@ export const products = [
   },
   {
     id: 4,
-    name: "Frostbite Jacket",
+    name: "yellow Jacket",
     category: "Clothing",
     price: 1299,
     description: "Windproof, insulated winter jacket for extreme cold.",
@@ -39,7 +39,7 @@ export const products = [
   },
   {
     id: 5,
-    name: "Shadow Cap",
+    name: "Puma Cap",
     category: "Accessories",
     price: 499,
     description: "Stylish black cap with adjustable fit and breathable fabric.",
@@ -71,16 +71,16 @@ export const products = [
   },
   {
     id: 9,
-    name: "Street Runner Shoes",
-    category: "Footwear",
+    name: "Street Runner Slipper",
+    category: "Slipper",
     price: 799,
     description: "Lightweight shoes built for casual comfort and walking.",
     image: product2,
   },
   {
     id: 10,
-    name: "Crimson Kicks",
-    category: "Footwear",
+    name: "Stylish ladies Bottle",
+    category: "Bottle",
     price: 2499,
     description: "Bold red sneakers that combine style and performance.",
     image: product1,

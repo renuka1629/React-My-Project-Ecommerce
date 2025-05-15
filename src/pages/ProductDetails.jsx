@@ -13,43 +13,55 @@ export default function ProductsDetails() {
             maxWidth: "800px",
             margin: "50px auto",
             padding: "30px",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.15)",
             borderRadius: "12px",
-            backgroundColor: "#fff",
+            backgroundColor: "#121212",
             fontFamily: "'Segoe UI', sans-serif",
-            textAlign: "center"
+            textAlign: "center",
+            color: "#fff"
         },
         image: {
             maxWidth: "100%",
             height: "auto",
-            borderRadius: "10px",
-            marginBottom: "20px"
+            borderRadius: "12px",
+            marginBottom: "25px",
+            border: "4px solid #9b4dca", // Violet neon border
+            boxShadow: "0 0 15px rgba(155, 77, 202, 0.6)"
         },
         name: {
-            fontSize: "2rem",
-            marginBottom: "10px",
-            color: "#333"
+            fontSize: "2.5rem",
+            marginBottom: "12px",
+            color: "#9b4dca", // Violet neon text color
+            textShadow: "0 0 15px rgba(155, 77, 202, 1)"
         },
         description: {
-            fontSize: "1.1rem",
-            marginBottom: "15px",
-            color: "#555"
+            fontSize: "1.2rem",
+            marginBottom: "18px",
+            color: "#d1d1d1",
+            lineHeight: "1.6"
         },
         price: {
-            fontSize: "1.3rem",
+            fontSize: "1.4rem",
             fontWeight: "bold",
-            color: "green",
-            marginBottom: "20px"
+            color: "#7fffd4", // Light aqua color for price
+            marginBottom: "25px",
+            textShadow: "0 0 10px rgba(127, 255, 212, 0.8)"
         },
         button: {
-            padding: "12px 25px",
-            fontSize: "1rem",
-            backgroundColor: "#4CAF50",
+            padding: "15px 30px",
+            fontSize: "1.2rem",
+            backgroundColor: "#9b4dca", // Violet neon background
             color: "#fff",
             border: "none",
             borderRadius: "6px",
             cursor: "pointer",
-            transition: "background 0.3s ease"
+            transition: "background 0.3s ease, transform 0.2s ease",
+            boxShadow: "0 0 10px rgba(155, 77, 202, 0.6)"
+        },
+        buttonHover: {
+            transform: "scale(1.05)",
+            backgroundColor: "#7f00ff", // Bright purple when hovered
+            boxShadow: "0 0 20px rgba(127, 255, 212, 0.8)"
         }
     };
 
@@ -65,6 +77,8 @@ export default function ProductsDetails() {
                     addToCart(product);
                     navigate("/cart");
                 }}
+                onMouseOver={(e) => e.target.style = {...styles.button, ...styles.buttonHover}} // Hover effect
+                onMouseOut={(e) => e.target.style = styles.button} // Reset to default button style
             >
                 🛒 Add to Cart
             </button>
